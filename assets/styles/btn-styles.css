@@ -1,0 +1,1559 @@
+/*img {
+  margin-right:10px;
+  width: 66px;
+}*/
+
+.ibl-wp-profile {
+  display: flex;
+  flex-direction: row;
+    height: 70px;
+    padding: 0 8px 0px 0;
+}
+
+.ibl-wp-profile-wrap{
+ border-radius: 50%;
+    width: 85px;
+    height: 85px;
+        position: absolute;
+    top: 50%;
+    left: -5px;
+    text-align: center;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+}
+
+.ibl-whatsapp-contact-name{
+   font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3px;
+        display: inline-block;
+}
+.ibl-wpbtn-title{
+	font-size: 11px;
+      margin-bottom: 2px;
+}
+.ibl-wptime-availability{
+	    width: 35px;
+    background-color: white;
+    border-radius: 1vh;
+    padding: 0px 3px 0px 3px;
+    font-size: 10px; 
+    color: #127321;
+}
+
+.ibl-whatsapp-contact-name:hover {
+	text-decoration: none !important;
+}
+
+.ibl-wp-profile-wrap.time_offline.withprofileborder:before{
+  border:4px solid #adb3b9;
+}
+
+.ibl-wp-profile-main{
+	position: relative;
+    max-width: 280px;
+    min-height: 64px;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    box-shadow: 0px 4px 8px 1px rgba(173, 173, 185, 0.94);
+     -webkit-box-shadow: 0px 4px 8px 1px rgba(173, 173, 185, 0.94);
+    -moz-box-shadow: 0px 4px 8px 1px rgba(173, 173, 185, 0.94);
+        border-radius: 50vh;
+        border-bottom: none !important;
+            text-decoration: none;
+
+           
+    cursor: pointer;
+    transition: 0.4s ease all;
+    -webkit-transition: 0.4s ease all;
+    -moz-transition: 0.4s ease all;
+    backface-visibility: hidden;
+    will-change: transform;
+  
+        text-decoration: none !important;
+
+  
+}
+/*a:visited {
+    color: white !important;
+}*/
+.ibl-wp-profile-wrap:before {
+    background: none;
+       content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    border-radius: 50%;
+}
+.ibl-wp-profile-wrap.withprofileborder:before {
+    background: none;
+       content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.ibl-wp-profile-wrap.time_offline:after{
+ content: "";
+    width: 28px;
+    height: 28px;
+    background: #7FB54F;
+    /* border: 3px solid #863232; */
+        background: transparent url(../images/ic_disable_wsp.png) center center no-repeat;
+    background-size: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 50%;
+}
+
+
+.ibl-wp-profile-wrap:after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background: #7FB54F;
+    /* border: 3px solid #863232; */
+        background: transparent url(../images/ic_online_wsp.png) center center no-repeat;
+    background-size: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 50%;
+    }
+.ibl-wpbtn-info{
+        padding: 7px 20px 8px 98px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 66px;
+    position: relative;
+    z-index: 4;
+    font-size: 12px;
+    line-height: 1.35em;
+}
+
+.ibl-widget-contact-row{
+  position:relative; 
+     border: 1.2px solid #2db742;
+    border-radius: 12px;
+    padding: 10px !important;
+    box-shadow: 0px 0px 8px 2px #037e0426;
+    -webkit-box-shadow: 0px 0px 8px 2px #037e0426;
+    margin-bottom: 20px;    background-color: #ffffff;
+}
+.ibl-contact-widget-img{
+    object-fit: cover;
+    object-position: top;    
+    margin-right: 10px;
+}
+.ibl-widget-contact-row-container .ibl-widget-contact-title-profession
+{
+  font-size: 12px;
+    font-weight: 500;
+}
+.ibl-widget-contact-row-container .ibl-widget-title{
+    font-size: 14px;
+    color: #007f00;
+    font-weight: 700;
+}
+.ibl-widget-icon-whatsapp-img{
+    width: 30px !important;
+    height: 30px !important;
+    right: 0px;
+    position: absolute;
+    bottom: 15px;    margin-right: 20px;
+}
+.ibl-wpbtn-status{
+display: inline-block;
+    width: 11px;
+    height: 10px;
+    margin-left: 3px;
+    
+    border-radius: 50%;
+
+    margin-left: 7px;
+    background: #73f910c7;
+}
+
+a.ibl-wp-profile-main:active {
+    /* background-color: #3e8e41; */
+    box-shadow: unset;
+    transform: translateY(4px);
+}
+
+.ibl-wp-profile-icon-only{
+        border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+}
+.ibl-wp-profile-icon-only.time_offline:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: #7FB54F;
+    /* border: 3px solid #863232; */
+        background: transparent url(../images/ic_disable_wsp.png) center center no-repeat;
+    background-size: 21px;
+    display: inline-block;
+    position: absolute;
+         bottom: 8px;
+    right: -6px;
+    border-radius: 50%;
+  }
+
+.ibl-wp-profile-icon-only:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: #7FB54F;
+    /* border: 3px solid #863232; */
+        background: transparent url(../images/ic_online_wsp.png) center center no-repeat;
+    background-size: 21px;
+    display: inline-block;
+    position: absolute;
+        bottom: 8px;
+    right: -6px;
+    border-radius: 50%;
+    }
+
+    .ibl-wpbtn-offline-txt{
+            color: #000000;
+    }
+    .main-footer-widget-chatbox{
+            position: fixed;
+             cursor: pointer;
+             z-index: 99999999999999;
+            
+             bottom: 10px;
+            
+         }
+
+.ibl-widget__chatbox{
+         width: 351px;
+    border-radius: 5px 5px 8px 8px;
+    -webkit-border-radius: 5px 5px 8px 8px;
+    -moz-border-radius: 5px 5px 8px 8px;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px 5px #555d6638;
+    -webkit-box-shadow:0px 5px 15px 5px #555d6638;
+    -moz-box-shadow:0px 5px 15px 5px #555d6638;
+ bottom: 140px;
+    right: 40px;
+    z-index: 9999999;
+    opacity: 0;
+        transition: visibility 0s ease 0s, opacity 0.5s linear 0s;
+    visibility: hidden;
+    -ms-transform: translate(0,50px);
+    transform: translate(0,50px);
+    -webkit-transform: translate(0,50px);
+    -moz-transform: translate(0,50px);
+    -webkit-transition: height 0s 500ms, opacity 300ms ease-in-out;
+       -moz-transition: height 0s 500ms, opacity 300ms ease-in-out;
+            -ms-transition: height 0s 500ms, opacity 300ms ease-in-out;
+         -o-transition: height 0s 500ms, opacity 300ms ease-in-out;
+        transition: height 0s 500ms, opacity 300ms ease-in-out;
+            max-width: calc(100% - 50px);
+                background-color: white;
+                 /*   top: -18px;*/
+}
+
+
+[class*='close-'] {
+    color: #fff;
+    font: 23px/100% arial, sans-serif;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+    padding: 6px;
+    /* width: 20px; */
+    /* height: 20px; */
+    /* background-color: #007e0087; */
+    border-radius: 50%;
+}
+
+.close-thik:after {
+  content: '✖'; /* UTF-8 symbol */
+}
+
+.ibl-widget__chatbox_head_title{
+    font-size: 22px;
+}
+.ibl-widget__chatbox_head_description{
+        font-size: 14px;
+        line-height: 22px;
+            margin-top: 10px;
+}
+
+
+.ibl-widget__chatbox_header{
+        padding: 20px;
+       padding-top: 40px;
+        font-family: Arial,Helvetica,sans-serif;
+}
+
+.ibl_wine-row {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  padding: 10px 0;
+   font-family: Arial,Helvetica,sans-serif;
+
+
+}
+
+.ibl_wine-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.ibl-widget__chat_contacts{
+      padding: 15px;
+      background-color: #ffffff21;
+          overflow-y: auto;
+        height: auto;
+    max-height: 300px;
+    }
+
+.ibl_wine-row img{
+        border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+body {
+ 
+
+  text-rendering: optimizeLegibility;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iblstyle2.ibl_wine-row img{
+      border-radius: 12px;
+    width: 57px;
+    height: 57px;
+ 
+           
+}
+
+
+
+.iblstyle2.ibl_wine-row:hover i.fa.fa-angle-right {
+    left: 230px;
+}
+.iblstyle2.ibl_wine-row:hover .button123{
+    opacity: 1;
+        position: absolute;
+    right: 0px;
+
+}
+
+
+.button123.xx{
+    opacity: 0;
+        position: absolute;
+    right: 0px;
+    transition: opacity .35s ease;
+}
+
+@media only screen and (max-width: 400px)
+{
+.ibl-widget__chatbox_head_title{
+    font-size: 20px !important;
+}
+}
+
+/*chat widget css*/
+
+
+.ibl_wsapp_fabs {
+  bottom: 0;
+  position: fixed;
+  margin: 1em;
+
+  z-index: 998;
+  
+}
+
+a#ibl_wsapp_prime:hover {
+    color: white;
+    outline: 0;
+    text-decoration: none;
+}
+
+.ibl_wsapp_fab {
+     display: table;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  color: #f0f0f0;
+ /* margin: 25px auto 0;*/
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+  cursor: pointer;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  position: relative;
+  z-index: 998;
+  overflow: hidden;
+  background:#3bb33b;
+}
+
+.ibl_wsapp_fab > i {
+  font-size: 2.5em;
+    display: table-cell;
+    vertical-align: middle;
+      -webkit-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+      margin: auto;
+}
+
+/*Chatbox*/
+
+.ibl_wsapp_chat {
+  position: fixed;
+  right: 85px;
+  bottom: 20px;
+  width: 400px;
+  font-size: 12px;
+  line-height: 8px;
+    font-family: Arial,Helvetica,sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  opacity: 0;
+
+
+
+
+  /* Netscape */
+  -moz-opacity: 0;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+  box-shadow: 1px 1px 100px 2px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  -webkit-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  visibility: hidden;
+ 
+    -khtml-opacity: 0;
+     filter: alpha(opacity=100);
+    zoom: 0;  
+    pointer-events: none;
+}
+
+
+
+
+
+
+.ibl_wsapp_chat.is-visible {
+  opacity: 1;
+
+  visibility: visible;
+    
+pointer-events: visible;
+
+  -moz-opacity: 1;
+
+
+  -khtml-opacity: 1;
+     filter: alpha(opacity=100);
+    zoom: 1;  
+}
+
+
+
+.ibl_wsapp_chat_header {
+      /* margin: 10px; */
+    font-size: 13px;
+     font-family: Arial,Helvetica,sans-serif;
+    font-weight: 500;
+   
+    height: 155px;
+  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+       padding: 15px;
+      
+
+
+}
+.chat_header2 {
+      /* margin: 10px; */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.ibl_wsapp_chat_header .span {
+  float:right;
+}
+#ibl_wsapp_chat_head {
+      margin: 10px 0;
+}
+
+
+.ibl_wsapp_chat_option {
+  /*float: left;*/
+  font-size: 19px;
+  list-style: none;
+  position: relative;
+  height: 100%;
+      margin: 50px 0px 0px 0px;
+  width: 100%;
+  text-align: relative;
+ /* margin-right: 10px;*/
+      letter-spacing: 0.5px;
+      font-weight: 400
+}
+
+
+.ibl_wsapp_chat_header img {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    border-radius: 50%;
+  width: 80px;
+    height: 80px;
+}
+.ibl_wsapp_header_img{
+  position: relative;
+}
+
+.change_img img{
+    width: 35px;
+    margin: 0px 20px 0px 20px;
+}
+.ibl_wsapp_chat_option .ibl_wsapp_agent {
+  font-size: 14px;
+    font-weight: 300;
+      font-family: Arial,Helvetica,sans-serif;
+          margin-top: 7px;
+              line-height: 25px;
+
+}
+.ibl_wsapp_chat_option .online{
+      opacity: 0.4;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+
+
+
+.ibl_wsapp_chat p,{
+    -webkit-animation: zoomIn .5s cubic-bezier(.42, 0, .58, 1);
+  animation: zoomIn .5s cubic-bezier(.42, 0, .58, 1);
+}
+
+
+
+.carousel .carousel-item,.carousel .carousel-item>img {
+   
+    width: 120px !important;
+    height: 120px !important;
+    }
+
+    .carousel .carousel-item>img {
+          border-radius: 50vh;
+    }
+
+
+ .carousel img{    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.carousel .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.2s;
+    -moz-transition: all 0.35s ease-in-out 0.2s;
+    transition: all 0.35s ease-in-out 0.2s;
+    background:#2db742;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .carousel  a.carousel-item:focus{
+  
+  outline: none !important;
+    text-decoration: none !important; 
+
+  }
+
+
+ .carousel  a.carousel-item.active:hover img{
+      opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+ .carousel  a.carousel-item.active:hover .info{
+  opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    outline: none;
+  }
+  .contact_name_caption{
+     margin: 0;
+    color: #2db742;
+      font-family: Arial,Helvetica,sans-serif;
+
+    font-size: 15px;
+  }
+  .contact_title_caption{
+     color: #fff;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 18px;
+       margin: 0;
+    padding: 40px 0 0 0;
+      font-family: Arial,Helvetica,sans-serif;
+
+    height: 110px;
+
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+        font-style: initial;
+  }
+
+  .btn-floating.btn-large i {
+    line-height: 58px !important;
+}
+
+@media only screen and (max-width: 400px)
+{
+  .ibl_wsapp_chat{
+        bottom: 85px !important;
+            right: 25px !important;
+    max-width: calc(100% - 50px);
+  }
+  .ibl_wsapp_chat_option{
+        font-size: 17px !important;
+  }
+}
+
+@media only screen and (min-width: 400px)
+{
+  .ibl_wsapp_chat{
+      
+            
+    max-width: calc(100% - 100px);
+  }
+  }
+
+  .ibl-widget__chat_contacts:before{
+
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    opacity: .5;
+   
+     background: url("8a055527b27b887521a9f084497d8879.png");
+         background-size: 366.5px 666px;
+             background-repeat: repeat repeat;  
+  }
+.fab_field {
+       width: 100%;
+   /* display: none;*/
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*style 2 for*/
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 210px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+  
+  /*   visibility: hidden;
+    opacity: 0;*/
+}
+/*.carousel.test{
+   visibility: visible;
+    opacity: 1;
+}*/
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+       top: -18px;
+    left: 0;
+}
+
+/*.fab_field .carousel {
+  display: none;
+        opacity: 0;
+    z-index: -1;
+        visibility: hidden;
+}*/
+
+/*.carousel.is-viscaro{
+   display: block;
+        opacity: 1;
+    z-index: 999999999999;
+        visibility: visible;
+
+}*/
+
+/*Chatbox scrollbar*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  margin: 2px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+/*Element state*/
+
+.is-active {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.is-float {
+  box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+.is-loading {
+  display: block;
+  -webkit-animation: load 1s cubic-bezier(0, .99, 1, 0.6) infinite;
+  animation: load 1s cubic-bezier(0, .99, 1, 0.6) infinite;
+}
+/*Animation*/
+/*
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity:1;
+  }
+}*/
+/* SMARTPHONES PORTRAIT */
+
+/*@media only screen and (min-width: 300px) {
+  .chat {
+    width: 250px;
+  }
+}*/
+/* SMARTPHONES LANDSCAPE */
+
+@media only screen and (min-width: 480px) {
+  .ibl_wsapp_chat {
+    width: 350px;
+  }
+  
+}
+/* TABLETS PORTRAIT */
+
+@media only screen and (min-width: 768px) {
+  .ibl_wsapp_chat {
+    width: 350px;
+  }
+ 
+}
+/* TABLET LANDSCAPE / DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+  .ibl_wsapp_chat {
+    width: 350px;
+  }
+ 
+}
+/*Color Options*/
+
+
+
+.blue .ibl_wsapp_fab {
+  background: #42a5f5;
+  color: #fff;
+}
+
+
+
+.blue .ibl_wsapp_chat {
+  background: #42a5f5;
+  color: #999;
+}
+
+
+/* Ripple */
+
+.ink {
+  display: block;
+  position: absolute;
+  background: rgba(38, 50, 56, 0.4);
+  border-radius: 100%;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  webkit-transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+/*animation effect*/
+
+.ink.animate {
+  -webkit-animation: ripple 0.5s ease-in-out;
+          animation: ripple 0.5s ease-in-out;
+}
+
+@-webkit-keyframes ripple {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/
+  
+  100% {
+    opacity: 0;
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    webkit-transform: scale(5);
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }
+}
+
+@keyframes ripple {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/
+  
+  100% {
+    opacity: 0;
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    webkit-transform: scale(5);
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #bbb;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #bbb;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #bbb;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #bbb;
+}
+
+/*.carousel {  
+display: flex;
+}*/
+.carousel .carousel-item,.carousel .carousel-item>img {
+   
+    width: 120px !important;
+    height: 120px !important;
+    }
+
+    .carousel .carousel-item>img {
+          border-radius: 50vh;
+    }
+
+
+ .carousel img{    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.carousel .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.2s;
+    -moz-transition: all 0.35s ease-in-out 0.2s;
+    transition: all 0.35s ease-in-out 0.2s;
+    background:#2db742;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .carousel  a.carousel-item:focus{
+  
+  outline: none !important;
+    text-decoration: none !important; 
+
+  }
+
+
+ .carousel  a.carousel-item.active:hover img{
+      opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+ .carousel  a.carousel-item.active:hover .info{
+  opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    outline: none;
+  }
+  .contact_name_caption{
+     margin: 0;
+    color: #2db742;
+      font-family: Arial,Helvetica,sans-serif;
+
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .contact_title_caption{
+     color: #fff;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 18px;
+       margin: 0;
+    padding: 40px 0 0 0;
+      font-family: Arial,Helvetica,sans-serif;
+
+    height: 110px;
+
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+        font-style: initial;
+  }
+
+  .btn-floating.btn-large i {
+    line-height: 58px !important;
+}
+
+@media only screen and (max-width: 400px)
+{
+  .ibl_wsapp_chat{
+        bottom: 85px !important;
+            right: 25px !important;
+    max-width: calc(100% - 50px);
+  }
+  .ibl_wsapp_chat_option{
+        font-size: 17px !important;
+  }
+}
+
+@media only screen and (min-width: 400px)
+{
+  .ibl_wsapp_chat{
+      
+            
+    max-width: calc(100% - 100px);
+  }
+  }
+
+  .ibl-widget__chat_contacts:before{
+
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    opacity: .1;
+   
+     background: url("8a055527b27b887521a9f084497d8879.png");
+         background-size: 366.5px 666px;
+             background-repeat: repeat repeat;  
+  }
+
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    border-style: none;
+}
+.woocomme_image_whatsapp {
+     position: relative;
+    
+}
+.woocomme_image_whatsapp img {
+    object-fit: cover;
+    object-position: top;    margin-right: 10px;    width: 50px;
+    height: 50px !important;
+    border-radius: 50%;
+}
+a.woocomme_image_whatsapp:after {
+    content: "";
+    width: 20px;
+    height: 24px;
+    background: #7FB54F;
+    /* border: 3px solid #863232; */
+     background: transparent url(../images/ic_online_wsp.png) center center no-repeat;
+
+    background-size: 21px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    border-radius: 50%;
+    z-index: 1; 
+  }
+
+
+
+
+
+.twitter {
+  font: normal normal 10px Arial;
+  text-align: center;
+  color: #998578;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+
+/*span {
+  font-style: italic;
+  display: block;
+}*/
+
+img {
+  max-width: 100%;
+}
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background:#2db742;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px;
+  border-radius: 3px;
+  width: 190px;
+  position: fixed;
+  right: -145px;
+  z-index: 998;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 0px 0;
+  width: 40px;
+  margin-left: 0px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+      font-size: 11px;
+      font-family: Arial,Helvetica,sans-serif;
+  /*text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;*/
+ /* vertical-align: top!important;*/
+}
+
+.float_icon-0 {
+  top: 160px;
+}
+
+.float_icon-1 {
+  top: 215px;
+}
+
+.float_icon-2{
+  top: 270px;
+}
+
+.float_icon-3{
+  top: 325px;
+}
+
+.float_icon-4 {
+  top: 380px;
+}
+
+.float_icon-5 {
+  top: 435px;
+}
+
+
+.fl-fl a:after {
+    content: "";
+      width: 17px;
+    height: 17px;
+    background: #7FB54F;
+    /* border: 3px solid #863232; */
+     background: transparent url(../images/ic_online_wsp.png) center center no-repeat;
+    background-size: 19px;
+    display: inline-block;
+    position: absolute;
+      top: 28px;
+    left: 5px;
+    border-radius: 50%;
+  }
+
+  .ibl-widget-contact-row-offline{
+        border: 1px solid grey !important;
+        box-shadow: 0px 0px 8px 2px #80808094 !important;
+    -webkit-box-shadow: 0px 0px 8px 2px #808080ab !important;
+        pointer-events: none;
+    opacity: 0.8;
+      } 
+
+.ibl-widget-contact-row-container .ibl-widget-title-offline {
+          font-size: 14px;
+    color: #878787;
+    font-weight: 700;
+  }
+
+
+  .ibl-widget-contact-row-container .ibl-widget-contact-title-offline-profession {
+    font-size: 11px;
+    font-weight: 500;
+        color: #808080d6;
+    line-height: 10px;
+}
+
+.ibl-widget-title-offlinetext{
+    font-size: 9.5px;
+    color: #a95e14;
+    margin-top: 2px;
+}
+
+#carousel_offline{
+      cursor: no-drop;
+}
+
+#carousel_offline .contact_name_caption{
+   color: grey;
+}
+
+#carousel_offline .info{
+    background: #878787;
+}
+#carousel_offline .contact_title_caption{
+     padding: 35px 0 0 0;
+    height: unset; 
+
+}
+
+#carousel_offline .carousel_offline_text{
+    margin-top: 3px;
+    font-size: 11px;
+    color: #ff8f00;
+    font-style: initial;
+}
+.ibl_wine-row.sidebar-woocommerce{
+  height:45px;    padding: 2px 0;
+}
+.ibl_wine-row.sidebar-woocommerce img{
+width: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    height: 40px;    vertical-align: middle;    margin-right: 15px;    position: relative;
+
+  }
+
+.ibl_wine-row.sidebar-woocommerce  .contact_title_profession
+{
+     font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    text-transform: initial;
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+    color:#333;
+}
+
+@keyframes pulse {
+   25% {
+     transform: scale(1.1);
+  }
+   75% {
+     transform: scale(0.9);
+  }
+}
+ .pulse {
+   display: inline-block;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+ .pulse:hover {
+   animation-name: pulse;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+
+/* Float Shadow */
+ .float-shadow {
+  
+   transition-duration: 0.3s;
+   transition-property: transform;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+ .float-shadow:before {
+   pointer-events: none;
+   position: absolute;
+   z-index: -1;
+   content: '';
+   top: 100%;
+   left: 5%;
+   height: 10px;
+   width: 90%;
+   opacity: 0;
+   /*   background: radial-gradient(ellipse at center, rgb(45, 183, 66) 0%, rgba(0, 0, 0, 0) 40%);*/
+  /* W3C */
+   transition-duration: 0.3s;
+   transition-property: transform opacity;
+}
+ .float-shadow:hover {
+   transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+ .float-shadow:hover:before {
+   opacity: 1;
+   transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.ibl-wp-profile-icon-only.time_offline.withofflineprofileborder {
+    border: 4px solid #636562;
+}
+
+
+.fa-times-thin:before {
+  content: '\00d7';
+  /*font-size: 38px;
+    font-weight: bold;*/
+
+        font-size: 46px;
+   /* font-weight: bold;*/
+    font-family: monospace;
+}
+
+
+.main_two_contacts_whatsapp{
+      margin: 50px;
+    display: flex;
+}
+
+p.online_contact_caption{
+  color: #fff;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 0;
+    padding: 25px 0 0 0;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 110px;
+        line-height: 18px;
+}
+
+p.offline_contact_caption{
+  color: #898989;
+}
+
+.custom_wpp_contact_items img{  
+  opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+        position: relative;
+            z-index: 99;
+  }
+
+  .custom_wpp_contact_items .contacts_info_details{
+-webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.2s;
+    -moz-transition: all 0.35s ease-in-out 0.2s;
+    transition: all 0.35s ease-in-out 0.2s;
+    background: #2db742;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;    
+z-index: 0;
+    height: 100px;
+  }
+
+.custom_wpp_contact_items a.whatsapp_contacts_inneritems:hover img {
+  opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+
+  }
+
+
+.custom_wpp_contact_items a.whatsapp_contacts_inneritems:hover + .contacts_info_details {
+       opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    outline: none;
+
+width: 90px;
+height: 90px;
+
+  }
+.custom_wppcontact_caption{
+    margin: 0;
+    color: #2db742;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+        line-height: 22px;
+  }
+.custom_wppcontact_time_caption{
+  margin:0;
+      line-height: 15px;
+      position: absolute;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 11px;
+   
+    color: #ff8f00;
+}
+
+.custom_wpp_contact_items{
+    position: relative;margin:auto; 
+}
+.whatsapp_contacts_inneritems{
+    position: relative;
+  top: 0;
+    left: 0;
+
+}
+
+.woo_img_float_left{
+  object-fit: cover;
+    object-position: top; margin-right: 10px;    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+ .ibl_wsappbtn_disabled{
+      pointer-events: none;
+            opacity: 0.5;
+    }
+
+    .ibl-widget-icon-whatsapp.pulse {width:55px;      background-color: #fff;
+    border-radius: 50%;}
+
+    .custom_wpp_contact_items{
+        position: relative;margin:auto;
+    }
+    .whatsapp_contacts_inneritems{
+       position: relative;
+                        top: 0;
+                        left: 0;
+    }
+
+    .wsapp_profile_icsons_style{
+          width: 90px;
+                        border-radius: 50vh;
+                        height: 90px;
+    }
+    #custom_wpp_contact_item_offline .contacts_info_details{
+      background: #878787;
+    }
+ #custom_wpp_contact_item_offline .custom_wppcontact_caption{
+  color:#878787;
+  position: relative;
+ }
+  .woocommerce_multiple_main{
+    margin: 10px 0;
+  }
+
+
+    .woocommerce_multiple_main.ibafter_cart{
+      margin-top: 20px;
+    }
+  .wp-profile-dp.ibl-iconpo{
+    display: inline-block;
+  }
